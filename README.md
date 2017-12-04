@@ -1,0 +1,1 @@
+For more information about Atiria you can check this link with the documentation http://static.altiria.com/especificaciones/altiria_push_http_1_16.pdf
