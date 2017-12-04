@@ -32,7 +32,7 @@ class AltariaServiceProvider extends ServiceProvider
         // Config
         $this->mergeConfigFrom( __DIR__.'/../config/altaria.php', 'altaria');
 
-        $this->app['bleh'] = $this->app->share(function($app) {
+        $this->app['altaria'] = $this->app->share(function($app) {
             return new Altaria;
         });
     }
