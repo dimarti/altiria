@@ -22,11 +22,19 @@ class Altaria {
             $resp = $client->request('post', '/api/http',
                 [
                     "form_params" => [
+                        //command used
                         'cmd' => 'sendsms',
+                        //destination number
                         'dest' => $phone,
+                        //message body (max 160 characters)
                         'msg' => $message,
+                        //encoding neccessary to emojis
+                        'encoding' => 'unicode',
+                        //account
                         'login' => config('altaria.user'),
+                        //password
                         'passwd' => config('altaria.password'),
+                        //domain_id
                         'domainId' => config('altaria.domain_id'),
                     ],
                     "headers" => [
@@ -48,12 +56,12 @@ class Altaria {
         }
     }
 
-
-
+    //TODO function to send messages to multiple destinations
     public function sendMultilpleMessages($phones){
 
     }
 
+    //TODO function to return the remaining number of sms in the account
     public function reviewCredit(){
 
     }
