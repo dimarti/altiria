@@ -12,7 +12,7 @@ class Altaria {
     public function sendMessage($message, $phone){
         try {
             $client = new Client(['base_uri' => config('altaria.domain', 'http://www.altiria.net')]);
-            $message = (utf8_encode(substr($message,0,160)));
+            $message = (substr($message,0,160));
 
             if(is_array($phone))
                 $phone = implode(',', $phone);
