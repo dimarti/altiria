@@ -1,7 +1,7 @@
 <?php
 
 /**
- * This file is part of altaria library
+ * This file is part of altiria library
  *
  * Date: 01/12/17
  *
@@ -16,17 +16,22 @@ return [
     /**
      * Username of the altiria user
      */
-    'user' => "user",
+    'user' => env('ALTIRIA_USER'),
 
     /**
      * Password of your altiria user
      */
-    'password' => "pass",
+    'password' => env('ALTIRIA_PASSWORD'),
 
     /*
      * Domain id from altiria
      */
-    'domain_id' => "demo",
+    'domain_id' => env('ALTIRIA_DOMAINID'),
+
+    /*
+     * Sender id from altiria
+     */
+    'sender_id' => env('ALTIRIA_SENDERID'),
 
     'domain' => 'http://www.altiria.net',
 ];

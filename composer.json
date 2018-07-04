@@ -13,16 +13,16 @@
     },
     "autoload": {
       "psr-4": {
-        "Usckuro\\Altaria\\": "src/"
+        "Usckuro\\Altiria\\": "src/"
       }
     },
     "extra": {
       "laravel": {
         "providers": [
-          "Usckuro\\Altaria\\Providers\\AltariaServiceProvider"
+          "Usckuro\\Altiria\\Providers\\AltiriaServiceProvider"
         ],
         "aliases": {
-          "Altaria": "Usckuro\\Altaria\\Facades\\Altaria"
+          "Altiria": "Usckuro\\Altiria\\Facades\\Altiria"
         }
       }
     }
